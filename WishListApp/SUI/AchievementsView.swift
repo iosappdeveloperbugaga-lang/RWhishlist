@@ -43,6 +43,7 @@ struct AchievementsView: View {
                         }
                     }
                     .padding()
+                    .padding(.bottom, 150)
                 }
             }
             .navigationTitle("Progress")

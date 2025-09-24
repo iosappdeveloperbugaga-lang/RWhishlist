@@ -2,6 +2,7 @@ import SwiftUI
 
 struct SchedulerView: View {
     @StateObject private var viewModel = SchedulerViewModel()
+    @State private var uiid: UUID = UUID()
     
     var body: some View {
         NavigationStack {
@@ -28,6 +29,7 @@ struct SchedulerView: View {
                     }
                     .listStyle(.plain)
                     .scrollContentBackground(.hidden)
+                    .id(uiid)
                 }
             }
             .navigationTitle("Scheduler")
@@ -44,6 +46,10 @@ struct SchedulerView: View {
             }
             .sheet(isPresented: $viewModel.showingAddEventSheet) {
                  AddEventView()
+                    .onDisappear {
+                        uiid = UUID()
+                    }
+                    
             }
         }
     }
