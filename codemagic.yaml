@@ -3,7 +3,7 @@ workflows:
     name: iOS Native
     max_build_duration: 120
     integrations:
-      app_store_connect: CodeMagic Api Key 
+      app_store_connect: CodeMagic Api Key 2
     environment:
       ios_signing:
         distribution_type: app_store
