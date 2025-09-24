@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		648F6EB12E832B8C004594FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EA72E832B8C004594FE /* AppDelegate.swift */; };
+		648F6EB22E832B8C004594FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EAE2E832B8C004594FE /* SceneDelegate.swift */; };
+		648F6EB32E832B8C004594FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EAF2E832B8C004594FE /* ViewController.swift */; };
+		648F6EB42E832B8C004594FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 648F6EA82E832B8C004594FE /* Assets.xcassets */; };
+		648F6EB62E832B8C004594FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648F6EAB2E832B8C004594FE /* LaunchScreen.storyboard */; };
+		648F6EB72E832B8C004594FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648F6EAD2E832B8C004594FE /* Main.storyboard */; };
+		648F6EC12E832DEC004594FE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 648F6EC02E832DEC004594FE /* RealmSwift */; };
+		648F6EC32E832E18004594FE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EC22E832E18004594FE /* Color.swift */; };
+		648F6EC52E832E2A004594FE /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EC42E832E2A004594FE /* RealmManager.swift */; };
+		648F6EC72E832E7D004594FE /* WishlistRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EC62E832E7D004594FE /* WishlistRepository.swift */; };
+		648F6EC92E832EF3004594FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EC82E832EF3004594FE /* ContentView.swift */; };
+		648F6ECB2E832F1A004594FE /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6ECA2E832F1A004594FE /* Components.swift */; };
+		648F6ECD2E832F23004594FE /* WishlistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6ECC2E832F23004594FE /* WishlistsViewModel.swift */; };
+		648F6ECF2E832F32004594FE /* WishlistObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6ECE2E832F32004594FE /* WishlistObject.swift */; };
+		648F6ED12E832F44004594FE /* WishlistRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6ED02E832F44004594FE /* WishlistRowView.swift */; };
+		648F6ED32E832F58004594FE /* WishlistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6ED22E832F58004594FE /* WishlistsView.swift */; };
+		648F6ED52E83310C004594FE /* StyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6ED42E83310C004594FE /* StyledTextField.swift */; };
+		648F6ED72E83311A004594FE /* CreateWishlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6ED62E83311A004594FE /* CreateWishlistViewModel.swift */; };
+		648F6ED92E833125004594FE /* CreateWishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6ED82E833125004594FE /* CreateWishlistView.swift */; };
+		648F6EDB2E8331D7004594FE /* gift_ideas_seed.json in Resources */ = {isa = PBXBuildFile; fileRef = 648F6EDA2E8331D7004594FE /* gift_ideas_seed.json */; };
+		648F6EDD2E8331F0004594FE /* SeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EDC2E8331F0004594FE /* SeedManager.swift */; };
+		648F6EDF2E833204004594FE /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EDE2E833204004594FE /* StartView.swift */; };
+		648F6EE12E833223004594FE /* GiftIdeaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EE02E833223004594FE /* GiftIdeaRepository.swift */; };
+		648F6EE32E833232004594FE /* GiftIdeasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EE22E833232004594FE /* GiftIdeasViewModel.swift */; };
+		648F6EE52E833240004594FE /* GiftIdeaCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EE42E833240004594FE /* GiftIdeaCardView.swift */; };
+		648F6EE72E83324E004594FE /* GiftIdeasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EE62E83324E004594FE /* GiftIdeasView.swift */; };
+		648F6EE92E8332CB004594FE /* MascotSticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EE82E8332CB004594FE /* MascotSticker.swift */; };
+		648F6EEB2E83333F004594FE /* WishlistSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EEA2E83333F004594FE /* WishlistSelectorView.swift */; };
+		648F6EED2E8333BD004594FE /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EEC2E8333BD004594FE /* NotificationManager.swift */; };
+		648F6EEF2E8333D6004594FE /* EventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EEE2E8333D6004594FE /* EventRepository.swift */; };
+		648F6EF12E8333E6004594FE /* SchedulerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EF02E8333E6004594FE /* SchedulerViewModel.swift */; };
+		648F6EF32E833406004594FE /* EventRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EF22E833406004594FE /* EventRowView.swift */; };
+		648F6EF52E833412004594FE /* SchedulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EF42E833412004594FE /* SchedulerView.swift */; };
+		648F6EF72E83341F004594FE /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EF62E83341F004594FE /* AddEventView.swift */; };
+		648F6EF92E8337F4004594FE /* AchievementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EF82E8337F4004594FE /* AchievementService.swift */; };
+		648F6EFB2E833860004594FE /* AchievementsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EFA2E833860004594FE /* AchievementsViewModel.swift */; };
+		648F6EFD2E833872004594FE /* AchievementCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EFC2E833872004594FE /* AchievementCardView.swift */; };
+		648F6EFF2E83387F004594FE /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6EFE2E83387F004594FE /* AchievementsView.swift */; };
+		648F6F012E833C0E004594FE /* WishlistDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6F002E833C0E004594FE /* WishlistDetailViewModel.swift */; };
+		648F6F032E833C1C004594FE /* AddGiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6F022E833C1C004594FE /* AddGiftView.swift */; };
+		648F6F052E833C29004594FE /* GiftRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6F042E833C29004594FE /* GiftRowView.swift */; };
+		648F6F072E833C34004594FE /* WishlistDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6F062E833C34004594FE /* WishlistDetailView.swift */; };
+		648F6F092E833F71004594FE /* TabBarVisibilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6F082E833F71004594FE /* TabBarVisibilityManager.swift */; };
+		648F6F0B2E833F7E004594FE /* TabBarHider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6F0A2E833F7E004594FE /* TabBarHider.swift */; };
+		648F6F0D2E834069004594FE /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6F0C2E834069004594FE /* PrimaryButton.swift */; };
+		648F6F0F2E834181004594FE /* View+HideTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6F0E2E834181004594FE /* View+HideTabBar.swift */; };
+		648F6F112E83434B004594FE /* ManageTabBarVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6F102E83434B004594FE /* ManageTabBarVisibility.swift */; };
+		648F6F132E834464004594FE /* CustomTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6F122E834464004594FE /* CustomTabItemView.swift */; };
+		648F6F152E834471004594FE /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6F142E834471004594FE /* CustomTabBarView.swift */; };
+		648F6F172E8345B2004594FE /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6F162E8345B2004594FE /* CustomAlertView.swift */; };
+		648F6F192E8345BD004594FE /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6F182E8345BD004594FE /* FilterView.swift */; };
+		648F6F1B2E83FE21004594FE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6F1A2E83FE21004594FE /* SettingsView.swift */; };
+		648F6F1E2E83FFCE004594FE /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648F6F1D2E83FFCE004594FE /* OnboardingPageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		648F6E8F2E832B7C004594FE /* WishListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		648F6EA72E832B8C004594FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		648F6EA82E832B8C004594FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		648F6EA92E832B8C004594FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		648F6EAA2E832B8C004594FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		648F6EAC2E832B8C004594FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		648F6EAE2E832B8C004594FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		648F6EAF2E832B8C004594FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		648F6EC22E832E18004594FE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		648F6EC42E832E2A004594FE /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		648F6EC62E832E7D004594FE /* WishlistRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistRepository.swift; sourceTree = "<group>"; };
+		648F6EC82E832EF3004594FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		648F6ECA2E832F1A004594FE /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		648F6ECC2E832F23004594FE /* WishlistsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistsViewModel.swift; sourceTree = "<group>"; };
+		648F6ECE2E832F32004594FE /* WishlistObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistObject.swift; sourceTree = "<group>"; };
+		648F6ED02E832F44004594FE /* WishlistRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistRowView.swift; sourceTree = "<group>"; };
+		648F6ED22E832F58004594FE /* WishlistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistsView.swift; sourceTree = "<group>"; };
+		648F6ED42E83310C004594FE /* StyledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledTextField.swift; sourceTree = "<group>"; };
+		648F6ED62E83311A004594FE /* CreateWishlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWishlistViewModel.swift; sourceTree = "<group>"; };
+		648F6ED82E833125004594FE /* CreateWishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWishlistView.swift; sourceTree = "<group>"; };
+		648F6EDA2E8331D7004594FE /* gift_ideas_seed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gift_ideas_seed.json; sourceTree = "<group>"; };
+		648F6EDC2E8331F0004594FE /* SeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedManager.swift; sourceTree = "<group>"; };
+		648F6EDE2E833204004594FE /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		648F6EE02E833223004594FE /* GiftIdeaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftIdeaRepository.swift; sourceTree = "<group>"; };
+		648F6EE22E833232004594FE /* GiftIdeasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftIdeasViewModel.swift; sourceTree = "<group>"; };
+		648F6EE42E833240004594FE /* GiftIdeaCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftIdeaCardView.swift; sourceTree = "<group>"; };
+		648F6EE62E83324E004594FE /* GiftIdeasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftIdeasView.swift; sourceTree = "<group>"; };
+		648F6EE82E8332CB004594FE /* MascotSticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MascotSticker.swift; sourceTree = "<group>"; };
+		648F6EEA2E83333F004594FE /* WishlistSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistSelectorView.swift; sourceTree = "<group>"; };
+		648F6EEC2E8333BD004594FE /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		648F6EEE2E8333D6004594FE /* EventRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRepository.swift; sourceTree = "<group>"; };
+		648F6EF02E8333E6004594FE /* SchedulerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerViewModel.swift; sourceTree = "<group>"; };
+		648F6EF22E833406004594FE /* EventRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRowView.swift; sourceTree = "<group>"; };
+		648F6EF42E833412004594FE /* SchedulerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerView.swift; sourceTree = "<group>"; };
+		648F6EF62E83341F004594FE /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
+		648F6EF82E8337F4004594FE /* AchievementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementService.swift; sourceTree = "<group>"; };
+		648F6EFA2E833860004594FE /* AchievementsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewModel.swift; sourceTree = "<group>"; };
+		648F6EFC2E833872004594FE /* AchievementCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCardView.swift; sourceTree = "<group>"; };
+		648F6EFE2E83387F004594FE /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
+		648F6F002E833C0E004594FE /* WishlistDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistDetailViewModel.swift; sourceTree = "<group>"; };
+		648F6F022E833C1C004594FE /* AddGiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGiftView.swift; sourceTree = "<group>"; };
+		648F6F042E833C29004594FE /* GiftRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftRowView.swift; sourceTree = "<group>"; };
+		648F6F062E833C34004594FE /* WishlistDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistDetailView.swift; sourceTree = "<group>"; };
+		648F6F082E833F71004594FE /* TabBarVisibilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVisibilityManager.swift; sourceTree = "<group>"; };
+		648F6F0A2E833F7E004594FE /* TabBarHider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarHider.swift; sourceTree = "<group>"; };
+		648F6F0C2E834069004594FE /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		648F6F0E2E834181004594FE /* View+HideTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+HideTabBar.swift"; sourceTree = "<group>"; };
+		648F6F102E83434B004594FE /* ManageTabBarVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTabBarVisibility.swift; sourceTree = "<group>"; };
+		648F6F122E834464004594FE /* CustomTabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabItemView.swift; sourceTree = "<group>"; };
+		648F6F142E834471004594FE /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		648F6F162E8345B2004594FE /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		648F6F182E8345BD004594FE /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		648F6F1A2E83FE21004594FE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		648F6F1D2E83FFCE004594FE /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		648F6E8C2E832B7C004594FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648F6EC12E832DEC004594FE /* RealmSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		648F6E862E832B7C004594FE = {
+			isa = PBXGroup;
+			children = (
+				648F6EB02E832B8C004594FE /* WishListApp */,
+				648F6E902E832B7C004594FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		648F6E902E832B7C004594FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				648F6E8F2E832B7C004594FE /* WishListApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		648F6EB02E832B8C004594FE /* WishListApp */ = {
+			isa = PBXGroup;
+			children = (
+				648F6EB92E832B95004594FE /* SUI */,
+				648F6EB82E832B90004594FE /* VC */,
+				648F6EA82E832B8C004594FE /* Assets.xcassets */,
+				648F6EA92E832B8C004594FE /* Info.plist */,
+				648F6EAB2E832B8C004594FE /* LaunchScreen.storyboard */,
+				648F6EAD2E832B8C004594FE /* Main.storyboard */,
+			);
+			path = WishListApp;
+			sourceTree = "<group>";
+		};
+		648F6EB82E832B90004594FE /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				648F6EA72E832B8C004594FE /* AppDelegate.swift */,
+				648F6EAE2E832B8C004594FE /* SceneDelegate.swift */,
+				648F6EAF2E832B8C004594FE /* ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		648F6EB92E832B95004594FE /* SUI */ = {
+			isa = PBXGroup;
+			children = (
+				648F6EFC2E833872004594FE /* AchievementCardView.swift */,
+				648F6EF82E8337F4004594FE /* AchievementService.swift */,
+				648F6EFE2E83387F004594FE /* AchievementsView.swift */,
+				648F6EFA2E833860004594FE /* AchievementsViewModel.swift */,
+				648F6EF62E83341F004594FE /* AddEventView.swift */,
+				648F6F022E833C1C004594FE /* AddGiftView.swift */,
+				648F6EC22E832E18004594FE /* Color.swift */,
+				648F6ECA2E832F1A004594FE /* Components.swift */,
+				648F6EC82E832EF3004594FE /* ContentView.swift */,
+				648F6ED82E833125004594FE /* CreateWishlistView.swift */,
+				648F6ED62E83311A004594FE /* CreateWishlistViewModel.swift */,
+				648F6F162E8345B2004594FE /* CustomAlertView.swift */,
+				648F6F142E834471004594FE /* CustomTabBarView.swift */,
+				648F6F122E834464004594FE /* CustomTabItemView.swift */,
+				648F6EEE2E8333D6004594FE /* EventRepository.swift */,
+				648F6EF22E833406004594FE /* EventRowView.swift */,
+				648F6F182E8345BD004594FE /* FilterView.swift */,
+				648F6EDA2E8331D7004594FE /* gift_ideas_seed.json */,
+				648F6EE42E833240004594FE /* GiftIdeaCardView.swift */,
+				648F6EE02E833223004594FE /* GiftIdeaRepository.swift */,
+				648F6EE62E83324E004594FE /* GiftIdeasView.swift */,
+				648F6EE22E833232004594FE /* GiftIdeasViewModel.swift */,
+				648F6F042E833C29004594FE /* GiftRowView.swift */,
+				648F6F102E83434B004594FE /* ManageTabBarVisibility.swift */,
+				648F6EE82E8332CB004594FE /* MascotSticker.swift */,
+				648F6EEC2E8333BD004594FE /* NotificationManager.swift */,
+				648F6F0C2E834069004594FE /* PrimaryButton.swift */,
+				648F6EC42E832E2A004594FE /* RealmManager.swift */,
+				648F6EF42E833412004594FE /* SchedulerView.swift */,
+				648F6EF02E8333E6004594FE /* SchedulerViewModel.swift */,
+				648F6F1D2E83FFCE004594FE /* OnboardingPageView.swift */,
+				648F6EDC2E8331F0004594FE /* SeedManager.swift */,
+				648F6F1A2E83FE21004594FE /* SettingsView.swift */,
+				648F6F1C2E83FF7A004594FE /* Start */,
+				648F6ED42E83310C004594FE /* StyledTextField.swift */,
+				648F6F0A2E833F7E004594FE /* TabBarHider.swift */,
+				648F6F082E833F71004594FE /* TabBarVisibilityManager.swift */,
+				648F6F0E2E834181004594FE /* View+HideTabBar.swift */,
+				648F6F062E833C34004594FE /* WishlistDetailView.swift */,
+				648F6F002E833C0E004594FE /* WishlistDetailViewModel.swift */,
+				648F6ECE2E832F32004594FE /* WishlistObject.swift */,
+				648F6EC62E832E7D004594FE /* WishlistRepository.swift */,
+				648F6ED02E832F44004594FE /* WishlistRowView.swift */,
+				648F6EEA2E83333F004594FE /* WishlistSelectorView.swift */,
+				648F6ED22E832F58004594FE /* WishlistsView.swift */,
+				648F6ECC2E832F23004594FE /* WishlistsViewModel.swift */,
+			);
+			path = SUI;
+			sourceTree = "<group>";
+		};
+		648F6F1C2E83FF7A004594FE /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				648F6EDE2E833204004594FE /* StartView.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		648F6E8E2E832B7C004594FE /* WishListApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 648F6EA22E832B7D004594FE /* Build configuration list for PBXNativeTarget "WishListApp" */;
+			buildPhases = (
+				648F6E8B2E832B7C004594FE /* Sources */,
+				648F6E8C2E832B7C004594FE /* Frameworks */,
+				648F6E8D2E832B7C004594FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WishListApp;
+			packageProductDependencies = (
+				648F6EC02E832DEC004594FE /* RealmSwift */,
+			);
+			productName = WishListApp;
+			productReference = 648F6E8F2E832B7C004594FE /* WishListApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		648F6E872E832B7C004594FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					648F6E8E2E832B7C004594FE = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = 648F6E8A2E832B7C004594FE /* Build configuration list for PBXProject "WishListApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 648F6E862E832B7C004594FE;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				648F6EBF2E832DEC004594FE /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 648F6E902E832B7C004594FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				648F6E8E2E832B7C004594FE /* WishListApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		648F6E8D2E832B7C004594FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648F6EB42E832B8C004594FE /* Assets.xcassets in Resources */,
+				648F6EB62E832B8C004594FE /* LaunchScreen.storyboard in Resources */,
+				648F6EB72E832B8C004594FE /* Main.storyboard in Resources */,
+				648F6EDB2E8331D7004594FE /* gift_ideas_seed.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		648F6E8B2E832B7C004594FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648F6EE32E833232004594FE /* GiftIdeasViewModel.swift in Sources */,
+				648F6F052E833C29004594FE /* GiftRowView.swift in Sources */,
+				648F6EDF2E833204004594FE /* StartView.swift in Sources */,
+				648F6EE92E8332CB004594FE /* MascotSticker.swift in Sources */,
+				648F6EE72E83324E004594FE /* GiftIdeasView.swift in Sources */,
+				648F6F032E833C1C004594FE /* AddGiftView.swift in Sources */,
+				648F6F192E8345BD004594FE /* FilterView.swift in Sources */,
+				648F6ED12E832F44004594FE /* WishlistRowView.swift in Sources */,
+				648F6EB12E832B8C004594FE /* AppDelegate.swift in Sources */,
+				648F6EED2E8333BD004594FE /* NotificationManager.swift in Sources */,
+				648F6F0B2E833F7E004594FE /* TabBarHider.swift in Sources */,
+				648F6ECB2E832F1A004594FE /* Components.swift in Sources */,
+				648F6ED32E832F58004594FE /* WishlistsView.swift in Sources */,
+				648F6EF92E8337F4004594FE /* AchievementService.swift in Sources */,
+				648F6F012E833C0E004594FE /* WishlistDetailViewModel.swift in Sources */,
+				648F6F112E83434B004594FE /* ManageTabBarVisibility.swift in Sources */,
+				648F6EC32E832E18004594FE /* Color.swift in Sources */,
+				648F6ED72E83311A004594FE /* CreateWishlistViewModel.swift in Sources */,
+				648F6F072E833C34004594FE /* WishlistDetailView.swift in Sources */,
+				648F6EC92E832EF3004594FE /* ContentView.swift in Sources */,
+				648F6EF72E83341F004594FE /* AddEventView.swift in Sources */,
+				648F6EF32E833406004594FE /* EventRowView.swift in Sources */,
+				648F6EF12E8333E6004594FE /* SchedulerViewModel.swift in Sources */,
+				648F6ED92E833125004594FE /* CreateWishlistView.swift in Sources */,
+				648F6F0D2E834069004594FE /* PrimaryButton.swift in Sources */,
+				648F6EDD2E8331F0004594FE /* SeedManager.swift in Sources */,
+				648F6EFD2E833872004594FE /* AchievementCardView.swift in Sources */,
+				648F6F1B2E83FE21004594FE /* SettingsView.swift in Sources */,
+				648F6EEF2E8333D6004594FE /* EventRepository.swift in Sources */,
+				648F6EFB2E833860004594FE /* AchievementsViewModel.swift in Sources */,
+				648F6F1E2E83FFCE004594FE /* OnboardingPageView.swift in Sources */,
+				648F6EEB2E83333F004594FE /* WishlistSelectorView.swift in Sources */,
+				648F6EC72E832E7D004594FE /* WishlistRepository.swift in Sources */,
+				648F6F172E8345B2004594FE /* CustomAlertView.swift in Sources */,
+				648F6EC52E832E2A004594FE /* RealmManager.swift in Sources */,
+				648F6EF52E833412004594FE /* SchedulerView.swift in Sources */,
+				648F6F092E833F71004594FE /* TabBarVisibilityManager.swift in Sources */,
+				648F6EE12E833223004594FE /* GiftIdeaRepository.swift in Sources */,
+				648F6F0F2E834181004594FE /* View+HideTabBar.swift in Sources */,
+				648F6ECD2E832F23004594FE /* WishlistsViewModel.swift in Sources */,
+				648F6F132E834464004594FE /* CustomTabItemView.swift in Sources */,
+				648F6EE52E833240004594FE /* GiftIdeaCardView.swift in Sources */,
+				648F6ECF2E832F32004594FE /* WishlistObject.swift in Sources */,
+				648F6EB22E832B8C004594FE /* SceneDelegate.swift in Sources */,
+				648F6ED52E83310C004594FE /* StyledTextField.swift in Sources */,
+				648F6EFF2E83387F004594FE /* AchievementsView.swift in Sources */,
+				648F6EB32E832B8C004594FE /* ViewController.swift in Sources */,
+				648F6F152E834471004594FE /* CustomTabBarView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		648F6EAB2E832B8C004594FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				648F6EAA2E832B8C004594FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		648F6EAD2E832B8C004594FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				648F6EAC2E832B8C004594FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		648F6EA32E832B7D004594FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WishListApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Roobeet Wishlist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WishRooListApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		648F6EA42E832B7D004594FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WishListApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Roobeet Wishlist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WishRooListApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		648F6EA52E832B7D004594FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		648F6EA62E832B7D004594FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		648F6E8A2E832B7C004594FE /* Build configuration list for PBXProject "WishListApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				648F6EA52E832B7D004594FE /* Debug */,
+				648F6EA62E832B7D004594FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		648F6EA22E832B7D004594FE /* Build configuration list for PBXNativeTarget "WishListApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				648F6EA32E832B7D004594FE /* Debug */,
+				648F6EA42E832B7D004594FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		648F6EBF2E832DEC004594FE /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		648F6EC02E832DEC004594FE /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 648F6EBF2E832DEC004594FE /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 648F6E872E832B7C004594FE /* Project object */;
+}

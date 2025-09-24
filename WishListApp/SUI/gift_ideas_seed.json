@@ -1,0 +1,22 @@
+[
+    { "title": "Wireless Headphones", "price": 89.99, "category": "Gadgets", "imageName": "headphones" },
+    { "title": "Paint Set", "price": 42.99, "category": "Creative", "imageName": "paintpalette" },
+    { "title": "Gaming Keyboard", "price": 129.99, "category": "Tech", "imageName": "keyboard" },
+    { "title": "Aromatic Candle Set", "price": 24.99, "category": "Home", "imageName": "flame" },
+    { "title": "Coffee Kit", "price": 59.99, "category": "Home", "imageName": "cup.and.saucer" },
+    { "title": "Fitness Tracker", "price": 99.99, "category": "Sport", "imageName": "figure.walk" },
+    { "title": "Bestseller Novel", "price": 19.99, "category": "Books", "imageName": "book.closed" },
+    { "title": "Skincare Set", "price": 75.00, "category": "Beauty", "imageName": "sparkles" },
+    { "title": "Lego Starship", "price": 159.99, "category": "Kids", "imageName": "airplane" },
+    { "title": "Smart Mug", "price": 119.00, "category": "Gadgets", "imageName": "mug" },
+    { "title": "Yoga Mat", "price": 35.50, "category": "Sport", "imageName": "figure.yoga" },
+    { "title": "Electric Toothbrush", "price": 69.99, "category": "Beauty", "imageName": "mouth" },
+    { "title": "Board Game", "price": 49.99, "category": "Kids", "imageName": "gamecontroller" },
+    { "title": "Portable Speaker", "price": 99.00, "category": "Tech", "imageName": "speaker.wave.2" },
+    { "title": "Gourmet Chocolate Box", "price": 39.99, "category": "Home", "imageName": "gift" },
+    { "title": "Artisan Tea Collection", "price": 29.99, "category": "Home", "imageName": "leaf" },
+    { "title": "Masterclass Subscription", "price": 180.00, "category": "Creative", "imageName": "graduationcap" },
+    { "title": "Dumbbell Set", "price": 85.00, "category": "Sport", "imageName": "dumbbell" },
+    { "title": "Kindle Reader", "price": 139.99, "category": "Books", "imageName": "book" },
+    { "title": "VR Headset", "price": 399.00, "category": "Gadgets", "imageName": "visionpro" }
+]
